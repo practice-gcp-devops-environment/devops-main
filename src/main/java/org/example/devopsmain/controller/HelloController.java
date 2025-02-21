@@ -4,8 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.example.devopsmain.dto.HelloDto;
 import org.example.devopsmain.dto.HelloRequestDto;
 import org.example.devopsmain.dto.HelloResponseDto;
-import org.example.devopsmain.service.HelloInfoService;
-import org.example.devopsmain.service.HelloRegisterService;
+import org.example.devopsmain.service.hello.HelloInfoService;
+import org.example.devopsmain.service.hello.HelloRegisterService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

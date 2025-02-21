@@ -1,8 +1,8 @@
-package org.example.devopsmain.service;
+package org.example.devopsmain.service.hello;
 
 import lombok.RequiredArgsConstructor;
 import org.example.devopsmain.dto.HelloDto;
-import org.example.devopsmain.service.persistence.HelloService;
+import org.example.devopsmain.service.hello.persistence.HelloService;
 import org.springframework.stereotype.Service;
 
 @Service

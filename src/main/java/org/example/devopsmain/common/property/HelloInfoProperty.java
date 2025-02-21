@@ -1,4 +1,4 @@
-package org.example.devopsmain.common;
+package org.example.devopsmain.common.property;
 
 import lombok.Getter;
 import lombok.Setter;
