@@ -9,8 +9,6 @@ spring:
     hikari:
       data-source-properties:
         sslrootcert: ${SERVER_CA_CERT}
-        sslcert: ${CLIENT_CERT}
-        sslkey: ${CLIENT_PRIVATE_KEY}
   jpa:
     hibernate:
       ddl-auto: none # Hibernate DDL (none, validate, update, create-drop)
