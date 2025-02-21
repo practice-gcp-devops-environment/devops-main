@@ -1,4 +1,4 @@
-package org.example.devopsmain.service.persistence;
+package org.example.devopsmain.service.hello.persistence;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
