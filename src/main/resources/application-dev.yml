@@ -22,3 +22,13 @@ spring:
 user:
   profile:
     url: ${PROFILE_URL}
+
+springdoc:
+  api-docs:
+    path: ${MAIN_SWAGGER_PATH}
+  swagger-ui:
+    path: ${MAIN_SWAGGER_PATH}
+
+openapi:
+  service:
+    url: ${API_GATEWAY_URL}
