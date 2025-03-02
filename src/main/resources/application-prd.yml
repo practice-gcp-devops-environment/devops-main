@@ -22,6 +22,10 @@ spring:
     port: ${REDIS_PORT}
     password: ${REDIS_PASSWORD}
 
+openapi:
+  service:
+    url: ${API_GATEWAY_URL}
+
 user:
   profile:
     url: ${PROFILE_URL}
