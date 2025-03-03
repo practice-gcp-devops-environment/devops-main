@@ -22,10 +22,21 @@ public class SwaggerConfig {
     @Value("${urls.api_gateway_server}")
     private String apiGatewayServerURL;
 
+    @Value("${urls.api_gateway_server2}")
+    private String apiGatewayServer2URL;
+
+    @Value("${urls.api_gateway_server3}")
+    private String apiGatewayServer3URL;
+
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
-                .servers(List.of(new Server().url(domainServerURL), new Server().url(apiGatewayServerURL)))
+                .servers(List.of(
+                        new Server().url(domainServerURL),
+                        new Server().url(apiGatewayServerURL),
+                        new Server().url(apiGatewayServer2URL),
+                        new Server().url(apiGatewayServer3URL)
+                ))
                 .components(new Components().addSecuritySchemes("Bearer",
                         new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")))
                 .addSecurityItem(new SecurityRequirement().addList("Bearer"))

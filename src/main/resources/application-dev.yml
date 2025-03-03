@@ -33,3 +33,4 @@ urls:
   domain_server: ${DOMAIN_URL}
   api_gateway_server: ${API_GATEWAY_URL}
   api_gateway_server2: ${API_GATEWAY_URL2}
+  api_gateway_server3: ${API_GATEWAY_URL3}
