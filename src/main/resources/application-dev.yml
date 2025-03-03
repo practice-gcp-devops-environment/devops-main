@@ -29,6 +29,6 @@ springdoc:
   swagger-ui:
     path: ${MAIN_SWAGGER_PATH}
 
-openapi:
-  service:
-    url: ${API_GATEWAY_URL}
+urls:
+  domain_server: ${DOMAIN_URL}
+  api_gateway_server: ${API_GATEWAY_URL}
