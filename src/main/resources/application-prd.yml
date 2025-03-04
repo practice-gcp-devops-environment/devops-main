@@ -36,3 +36,4 @@ urls:
   api_gateway_server6: ${API_GATEWAY_URL6}
   api_gateway_server7: ${API_GATEWAY_URL7}
   api_gateway_server8: ${API_GATEWAY_URL8}
+  api_gateway_server9: ${API_GATEWAY_URL9}

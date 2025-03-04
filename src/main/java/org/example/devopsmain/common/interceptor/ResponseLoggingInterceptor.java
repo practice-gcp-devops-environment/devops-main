@@ -26,9 +26,9 @@ public class ResponseLoggingInterceptor implements HandlerInterceptor {
             headerLog.append(headerName).append(": ").append(response.getHeader(headerName)).append("\n");
         }
 
-        logger.info("[OUTBOUND RESPONSE] {} {}", method, responseUri);
-        logger.info("[HEADERS] \n{}", headerLog);
-        logger.info("[STATUS] {}", response.getStatus());
+        System.out.println("[OUTBOUND RESPONSE] " + method + " " + responseUri);
+        System.out.println("[HEADERS] \n" + headerLog);
+        System.out.println("[STATUS] " + response.getStatus());
     }
 }
 
