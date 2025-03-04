@@ -20,6 +20,12 @@ public class CorsConfig {
     @Value("${urls.api_gateway_server3}")
     private String apiGatewayServer3URL;
 
+    @Value("${urls.api_gateway_server4}")
+    private String apiGatewayServer4URL;
+
+    @Value("${urls.api_gateway_server5}")
+    private String apiGatewayServer5URL;
+
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
@@ -30,7 +36,9 @@ public class CorsConfig {
                                 domainServerURL,
                                 apiGatewayServerURL,
                                 apiGatewayServer2URL,
-                                apiGatewayServer3URL
+                                apiGatewayServer3URL,
+                                apiGatewayServer4URL,
+                                apiGatewayServer5URL
                         ) // 허용할 도메인
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
