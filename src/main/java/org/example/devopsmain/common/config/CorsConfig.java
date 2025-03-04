@@ -41,7 +41,8 @@ public class CorsConfig {
                                 apiGatewayServer2URL,
                                 apiGatewayServer3URL,
                                 apiGatewayServer4URL,
-                                apiGatewayServer5URL
+                                apiGatewayServer5URL,
+                                apiGatewayServer6URL
                         ) // 허용할 도메인
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
