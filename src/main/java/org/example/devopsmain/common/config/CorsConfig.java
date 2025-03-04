@@ -26,6 +26,9 @@ public class CorsConfig {
     @Value("${urls.api_gateway_server5}")
     private String apiGatewayServer5URL;
 
+    @Value("${urls.api_gateway_server6}")
+    private String apiGatewayServer6URL;
+
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
