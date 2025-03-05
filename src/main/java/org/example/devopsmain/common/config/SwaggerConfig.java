@@ -28,6 +28,27 @@ public class SwaggerConfig {
     @Value("${urls.api_gateway_server3}")
     private String apiGatewayServer3URL;
 
+    @Value("${urls.api_gateway_server4}")
+    private String apiGatewayServer4URL;
+
+    @Value("${urls.api_gateway_server5}")
+    private String apiGatewayServer5URL;
+
+    @Value("${urls.api_gateway_server6}")
+    private String apiGatewayServer6URL;
+
+    @Value("${urls.api_gateway_server7}")
+    private String apiGatewayServer7URL;
+
+    @Value("${urls.api_gateway_server8}")
+    private String apiGatewayServer8URL;
+
+    @Value("${urls.api_gateway_server9}")
+    private String apiGatewayServer9URL;
+
+    @Value("${urls.api_gateway_server10}")
+    private String apiGatewayServer10URL;
+
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
@@ -35,7 +56,14 @@ public class SwaggerConfig {
                         new Server().url(domainServerURL),
                         new Server().url(apiGatewayServerURL),
                         new Server().url(apiGatewayServer2URL),
-                        new Server().url(apiGatewayServer3URL)
+                        new Server().url(apiGatewayServer3URL),
+                        new Server().url(apiGatewayServer4URL),
+                        new Server().url(apiGatewayServer5URL),
+                        new Server().url(apiGatewayServer6URL),
+                        new Server().url(apiGatewayServer7URL),
+                        new Server().url(apiGatewayServer8URL),
+                        new Server().url(apiGatewayServer9URL),
+                        new Server().url(apiGatewayServer10URL)
                 ))
                 .components(new Components().addSecuritySchemes("Bearer",
                         new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")))
