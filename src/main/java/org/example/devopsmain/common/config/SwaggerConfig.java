@@ -49,6 +49,9 @@ public class SwaggerConfig {
     @Value("${urls.api_gateway_server10}")
     private String apiGatewayServer10URL;
 
+    @Value("${urls.api_gateway_server11}")
+    private String apiGatewayServer11URL;
+
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
@@ -63,7 +66,8 @@ public class SwaggerConfig {
                         new Server().url(apiGatewayServer7URL),
                         new Server().url(apiGatewayServer8URL),
                         new Server().url(apiGatewayServer9URL),
-                        new Server().url(apiGatewayServer10URL)
+                        new Server().url(apiGatewayServer10URL),
+                        new Server().url(apiGatewayServer11URL)
                 ))
                 .components(new Components().addSecuritySchemes("Bearer",
                         new SecurityScheme().type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")))
